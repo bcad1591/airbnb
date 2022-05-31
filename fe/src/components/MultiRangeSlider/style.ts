@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import { mixin } from '@/styles/mixin';
 
 export const MultiRangeSlider = styled.div`
-  position: absolute;
   ${mixin.flexbox({ jc: 'center', ai: 'center' })};
-  height: 100px;
+  position: apsolute;
+  width: 200px;
+  z-index: 1;
 `;
 
 export const Input = styled.input.attrs(() => ({ type: 'range' }))`
@@ -14,9 +15,17 @@ export const Input = styled.input.attrs(() => ({ type: 'range' }))`
   pointer-events: none;
   position: absolute;
   width: 200px;
-  height: 10px;
+  height: 5px;
   outline: none;
   background: ${({ theme }) => theme.color.gray6};
+
+  .zindex-3 {
+    z-index: 3;
+  }
+
+  .zindex-4 {
+    z-index: 4;
+  }
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -54,17 +63,4 @@ export const Input = styled.input.attrs(() => ({ type: 'range' }))`
     border: none;
     background: transparent;
   }
-`;
-
-export const Slider = styled.div`
-  position: relative;
-  width: 200px;
-`;
-
-export const SliderTrack = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  background-color: #ced4da;
-  z-index: 1;
 `;
