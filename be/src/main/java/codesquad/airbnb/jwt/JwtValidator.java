@@ -4,7 +4,6 @@ import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import java.util.Date;
-import java.util.NoSuchElementException;
 import javax.xml.bind.DatatypeConverter;
 import org.springframework.stereotype.Component;
 

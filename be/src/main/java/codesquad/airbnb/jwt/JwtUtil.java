@@ -1,6 +1,5 @@
 package codesquad.airbnb.jwt;
 
-import java.util.NoSuchElementException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpHeaders;
